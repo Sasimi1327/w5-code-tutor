@@ -1,10 +1,59 @@
----
-title: Coding Home 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Coding Home 首頁</title>
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="bg-aztec sticky-top">
+      <nav class="header container d-flex justify-content-between align-items-center">
+  <div class="logo">
+    <a href="./" class="py-md-6"><img src="../assets/images/logo.svg"  alt="logo pc" class="logo img-pc d-none d-md-inline-block"></a>
+    <a href="./" class="py-6 py-md-0"><img src="../assets/images/logo2.svg" alt="logo mobile" class="logo img-mobile d-md-none"></a>
+  </div>
+
+  <div>
+    <div class="navbar py-0 d-none d-md-block">
+      <ul class="d-flex align-items-center">
+        <li>
+          <a href="/" class="text-light py-8 px-6 fz-7">首頁</a>
+        </li>
+        <li>
+          <a href="./course.html" class="text-light py-8 px-6 fz-7">課程介紹</a>
+        </li>
+        <li>
+          <a href="#myLogin" role="button" data-bs-toggle="modal" class="text-light py-8 px-6 fz-7"><span class="material-icons align-bottom mr-2">account_circle</span>登入</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="dropdown">
+      <a class="burgar_btn d-block d-md-none" role="button" href="#collapseMenu" data-bs-toggle="collapse"><i class="fas fa-bars"></i></a>
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <div class="collapse" id="collapseMenu">
+      <ul class="d-flex flex-column align-items-center bg-aztec py-3">
+        <li><a class="py-3 px-20 text-light" href="/">首頁</a></li>
+        <li><a class="py-3 px-20 text-light" href="./course.html">課程介紹</a></li>
+        <li><a class="py-3 px-20 text-light" href="#myLogin" role="button" data-bs-toggle="modal"><span class="material-icons align-bottom mr-2">account_circle</span>登入</a></li>
+      </ul>
+    </div>
+
+    
 <section class="bg-asphalt container-fluid">
   <div class="banner container h-100">
     <div class="row align-items-center justify-content-center h-100">
@@ -437,3 +486,48 @@ current: index
     </div>
   </div>
 </section>
+
+    <footer class="bg-acadia">
+      <div class="footer container text-chino py-6 lh-19">
+  Coding Home © 2022 All Rights Reserved
+</div>
+    </footer>
+
+    <div class="modal fade" id="myLogin" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-aztec text-center">
+          <div class="d-flex justify-content-center position-relative p-6 pb-8">
+            <h5 class="modal-title fz-4">登入</h5>
+            <button type="button" class="btn-close btn-close-white close position-absolute" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body mx-auto">
+            <form class="form text-start mb-12">
+              <label for="myMail">信箱</label><br>
+              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light radius-4 w-100" id="myMail" name="myMail" type="email" placeholder="請輸入信箱"><br>
+
+              <label for="myPwd">密碼</label><br>
+              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light radius-4 w-100" id="myPwd" name="myPwd" type="password" placeholder="請輸入密碼"><br>
+
+              <button type="submit" class="bg-gradient w-100 py-2 text-light radius-8 border-0 fz-7">登入</button>
+            </form>
+
+            <div class="position-relative pb-4">
+              <hr class="text-silver">
+              <div class="px-4 bg-aztec text-silver position-absolute top-0 left-50 translate-middle word-nowrap">其他登入方式</div>
+            </div>
+
+            <a role="button" href="#" class="btn btn-outline-light mb-6 py-2 px-8 w-100 radius-4 position-relative"><img src="./assets/images/icon_fb.svg" class="icon-size-24 position-absolute social-icon" alt="fb-icon">Facebook 登入</a>
+
+            <a role="button" href="#" class="btn btn-outline-light mb-12 py-2 px-8 w-100 radius-4 position-relative"><img src="./assets/images/icon_google.svg" class="icon-size-24 position-absolute social-icon" alt="fb-icon">Google 登入</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

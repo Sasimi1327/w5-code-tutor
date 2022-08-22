@@ -1,9 +1,11 @@
+"use strict";
+
 var programSwiper = new Swiper(".programSwiper", {
   autoplay: {
     // delay: 2000,
     // disableOnInteraction: false,
     disableOnInteraction: false,
-    delay: 0,
+    delay: 0
   },
   speed: 1500,
   loop: true,
@@ -11,37 +13,36 @@ var programSwiper = new Swiper(".programSwiper", {
   spaceBetween: 16,
   breakpoints: {
     767: {
-      slidesPerView: 5,
+      slidesPerView: 5
     },
     991: {
-      slidesPerView: 7,
-    },
-  },
+      slidesPerView: 7
+    }
+  }
 });
-
 var powerswiper = new Swiper(".powerswiper", {
   effect: "fade",
   fadeEffect: {
-    crossFade: true,
+    crossFade: true
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev"
   },
   pagination: {
-    el: ".swiper-pagination",
-  },
+    el: ".swiper-pagination"
+  }
 });
-
 var programSwiper = new Swiper(".courseSwiper", {
   slidesPerView: 2,
   spaceBetween: 8,
   breakpoints: {
     767: {
-      slidesPerView: 4,
+      slidesPerView: 4
     },
     991: {
-      slidesPerView: 6,
-    },
-  },
+      slidesPerView: 6
+    }
+  }
 });
+//# sourceMappingURL=all.js.map
