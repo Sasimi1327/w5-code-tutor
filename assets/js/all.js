@@ -45,4 +45,15 @@ var programSwiper = new Swiper(".courseSwiper", {
     }
   }
 });
+var pc = window.matchMedia("(min-width: 767px)");
+pc.addListener(checkMenuClose);
+
+function checkMenuClose(pMatchMedia) {
+  if (pMatchMedia.matches) {
+    console.log("大於767");
+    $("#collapseMenu").collapse("hide");
+  } else {
+    console.log("小於767");
+  }
+}
 //# sourceMappingURL=all.js.map
