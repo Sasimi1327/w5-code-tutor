@@ -1,3 +1,5 @@
+AOS.init();
+
 var programSwiper = new Swiper(".programSwiper", {
   autoplay: {
     // delay: 2000,
