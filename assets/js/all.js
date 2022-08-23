@@ -30,7 +30,8 @@ var powerswiper = new Swiper(".powerswiper", {
     prevEl: ".swiper-button-prev"
   },
   pagination: {
-    el: ".swiper-pagination"
+    el: ".swiper-pagination",
+    clickable: true
   }
 });
 var programSwiper = new Swiper(".courseSwiper", {
