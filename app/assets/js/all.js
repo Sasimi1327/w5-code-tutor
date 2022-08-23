@@ -30,6 +30,7 @@ var powerswiper = new Swiper(".powerswiper", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
 
