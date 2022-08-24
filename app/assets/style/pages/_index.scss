@@ -159,6 +159,10 @@
 .word-nowrap {
   white-space:nowrap;
 }
+.above-header {
+  z-index: 1030 ;
+  position: relative;
+}
 
 //學習改善
 .improve-title {
