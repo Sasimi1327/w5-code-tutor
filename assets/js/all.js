@@ -57,5 +57,10 @@ function checkMenuClose(pMatchMedia) {
   } else {
     console.log("小於767");
   }
-}
+} // const elem = document.querySelector('input[name="inputDate"]');
+// const datepicker = new Datepicker(elem, {
+//   // ...options
+//   language: 'zh-TW',
+//   buttonClass: 'btn',
+// });
 //# sourceMappingURL=all.js.map
