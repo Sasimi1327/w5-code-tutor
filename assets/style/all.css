@@ -17538,7 +17538,7 @@ input {
   position: -webkit-sticky;
   position: sticky;
   top: 75px;
-  z-index: 2;
+  z-index: 1020;
 }
 
 .banner {
