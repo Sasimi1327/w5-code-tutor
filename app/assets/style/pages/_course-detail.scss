@@ -1,0 +1,29 @@
+
+.sideMenu {
+  right: 48px;
+  top: 170px;
+}
+.course-menu-item:hover {
+  color: $primary;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid $light;
+}
+.border-bottom-silver {
+  border-bottom: 1px solid $silver;
+}
+.border-left-primary {
+  border-left: 3px solid $primary;
+}
+.list-style-type-square {
+  list-style-type: none;
+  li::before {
+    content: "\25FC";
+    color: $primary;
+    display: inline-block; 
+    width: 1rem;
+    margin-right: 8px;
+    margin-left: -2.175rem;
+  }
+}
