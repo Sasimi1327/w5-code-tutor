@@ -17706,6 +17706,11 @@ input {
   white-space: nowrap;
 }
 
+.above-header {
+  z-index: 1030;
+  position: relative;
+}
+
 .improve-title {
   opacity: .5;
 }
