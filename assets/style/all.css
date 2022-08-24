@@ -17534,6 +17534,13 @@ input {
           transform: translateY(-50%);
 }
 
+.stickyHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
+  z-index: 2;
+}
+
 .banner {
   height: 360px;
   background-image: url("../images/bg_home_mobile.jpg");
@@ -18047,8 +18054,10 @@ input {
 .course-animate {
   animation-name: bounceInRight, swing;
   -webkit-animation-name: bounceInRight, swing;
-  animation-duration: 2s, 3s;
-  -webkit-animation-duration: 2s, 3s;
+  -moz-animation-name: bounceInRight, swing;
+  animation-duration: 1s, 2s;
+  -webkit-animation-duration: 1s, 2s;
+  -moz-animation-duration: 1s, 2s;
 }
 
 /*# sourceMappingURL=all.css.map */
