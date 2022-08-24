@@ -7215,6 +7215,10 @@ fieldset:disabled .btn {
   line-height: 21px;
 }
 
+.lh-28 {
+  line-height: 28px;
+}
+
 .lh-37 {
   line-height: 37px;
 }
@@ -17556,7 +17560,7 @@ input {
   }
 }
 
-.banner .square {
+.square {
   width: 10px;
   height: 10px;
   background-color: #fff;
@@ -18082,6 +18086,40 @@ input {
   animation-duration: 1s, 2s;
   -webkit-animation-duration: 1s, 2s;
   -moz-animation-duration: 1s, 2s;
+}
+
+.sideMenu {
+  right: 48px;
+  top: 170px;
+}
+
+.course-menu-item:hover {
+  color: #62DB54;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid #ffffff;
+}
+
+.border-bottom-silver {
+  border-bottom: 1px solid #C1C1C1;
+}
+
+.border-left-primary {
+  border-left: 3px solid #62DB54;
+}
+
+.list-style-type-square {
+  list-style-type: none;
+}
+
+.list-style-type-square li::before {
+  content: "\25FC";
+  color: #62DB54;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 8px;
+  margin-left: -2.175rem;
 }
 
 /*# sourceMappingURL=all.css.map */
