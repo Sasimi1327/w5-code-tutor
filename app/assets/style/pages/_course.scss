@@ -46,7 +46,9 @@
 .course-animate {
   animation-name: bounceInRight, swing;
   -webkit-animation-name: bounceInRight, swing;
+  -moz-animation-name: bounceInRight, swing;
 
-  animation-duration: 2s, 3s;
-  -webkit-animation-duration: 2s, 3s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-duration: 1s, 2s;
+  -moz-animation-duration: 1s, 2s;
 }

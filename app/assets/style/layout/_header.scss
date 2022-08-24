@@ -71,3 +71,9 @@ input {
   left: 32px;
   transform: translateY(-50%);
 }
+
+.stickyHeader {
+  position: sticky;
+  top: 75px;
+  z-index: 2;
+}
