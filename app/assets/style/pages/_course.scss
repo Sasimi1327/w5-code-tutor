@@ -42,3 +42,11 @@
     height: 150px;
   }
 }
+
+.course-animate {
+  animation-name: bounceInRight, swing;
+  -webkit-animation-name: bounceInRight, swing;
+
+  animation-duration: 2s, 3s;
+  -webkit-animation-duration: 2s, 3s;
+}
