@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>課程報名</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+<!-- 動畫AOS + animate.css + hover.css + css shake -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link href="./assets/style/helpers/hover-min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+<!-- 輪播swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<!-- 日曆插件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+
+<link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="bg-aztec sticky-top">
+      <nav class="header container d-flex justify-content-between align-items-center">
+  <div class="logo">
+    <a href="./" class="hvr-bounce-in py-md-6"><img src="./assets/images/logo.svg"  alt="logo pc" class="logo img-pc d-none d-md-inline-block"></a>
+    <a href="./" class="hvr-bounce-in py-6 py-md-0"><img src="./assets/images/logo2.svg" alt="logo mobile" class="logo img-mobile d-md-none"></a>
+  </div>
+
+  <div>
+    <div class="navbar py-0 d-none d-md-block">
+      <ul class="d-flex align-items-center">
+        <li>
+          <a href="./" class="shake-slow text-light py-8 px-6 fz-7">首頁</a>
+        </li>
+        <li>
+          <a href="./course.html" class="shake-slow text-light py-8 px-6 fz-7">課程介紹</a>
+        </li>
+        <li>
+          <a href="#myLogin" role="button" data-bs-toggle="modal" class="shake-slow text-light py-8 px-6 fz-7"><span class="material-icons align-bottom mr-2">account_circle</span>登入</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <a class="burgar_btn d-block d-md-none" role="button" href="#collapseMenu" data-bs-toggle="collapse"><i class="fas fa-bars"></i></a>
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <div class="bg-aztec collapse stickyHeader" id="collapseMenu">
+      <ul class="d-flex flex-column align-items-center bg-aztec py-3">
+        <li><a class="py-3 px-20 text-light shake-slow" href="./">首頁</a></li>
+        <li><a class="py-3 px-20 text-light shake-slow" href="./course.html">課程介紹</a></li>
+        <li><a class="py-3 px-20 text-light shake-slow" href="#myLogin" role="button" data-bs-toggle="modal"><span class="material-icons align-bottom mr-2">account_circle</span>登入</a></li>
+      </ul>
+    </div>
+
+    
+<div class="bg-asphalt">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <div class="position-relative mt-6 mb-13 mb-lg-11 mb-lg-12">
+          <div class="progress" style="height: 2px;">
+            <div class="progress-bar" role="progressbar" style="width: 0%;"></div>
+          </div>
+
+          <span class="step-11 position-absolute top-0 left-0 translate-middle btn btn-sm btn-primary rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">1</span>
+          <span class="step-12 position-absolute top-0 left-50 translate-middle btn btn-sm btn-aztec rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">2</span>
+          <span class="step-13 position-absolute top-0 left-100 translate-middle btn btn-sm btn-aztec rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">3</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-dark pt-0 pt-lg-12 pb-10 pb-lg-36">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="animate__animated animate__backInLeft col-lg-4 mb-11 mb-lg-0" style="z-index:1;">
+        <div class="register-card card p-6 py-lg-12 px-lg-8 text-center mr-lg-n5">
+          <img src="./assets/images/teacher01.jpg" alt="avatar" class="rounded-circle mb-4 mb-lg-6 mx-auto icon-size-100">
+          <h3 class="fz-8 fz-lg-7 lh-base mb-2 mb-lg-1">基礎前端 - HTML</h3>
+          <h4 class="text-primary fz-8 lh-base mb-2">前端語言</h4>
+          <p class="fz-8">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+        </div>
+      </div>
+
+      <div class="animate__animated animate__backInRight col-lg-8">
+        <div class="p-6 py-lg-12 pr-lg-8 pl-lg-29 ml-lg-n5 bg-asphalt">
+          <h2 class="fz-4 mb-6 mb-lg-12">課程報名</h2>
+
+          <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-2">選擇付款方式</h3>
+          <ul class="row align-items-center row-cols-2 row-cols-lg-4 mx-0 mb-8">
+            <li class="col-6 col-lg-3 pr-1 pr-lg-2 mb-2 mb-lg-0">
+              <a class="active p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">信用卡付款</a>
+            </li>
+            <li class="col-6 col-lg-3 pl-1 px-lg-2 mb-2 mb-lg-0">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">超商繳款</a>
+            </li>
+            <li class="col-6 col-lg-3 pr-1 px-lg-2">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">ATM轉帳</a>
+            </li>
+            <li class="col-6 col-lg-3 pl-1 pl-lg-2">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">12期分期付款</a>
+            </li>
+          </ul>
+
+          <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-6">訂單資訊</h3>
+
+          <ul class="row text-silver text-start mb-6">
+            <li class="col-lg-6">
+              <label for="myName">姓名</label><br>
+              <input type="text" name="inputName" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myName" placeholder="請輸入姓名">
+            </li>
+            <li class="col-lg-6">
+              <label for="myTel">電話</label><br>
+              <input type="tel" name="inputTel" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myTel" placeholder="請輸入電話號碼">
+            </li>
+            <li>
+              <label for="myEmail">Email</label><br>
+              <input type="email" name="inputEmail" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myEmail" placeholder="請輸入Email">
+            </li>
+            <li class="col-lg-6">
+              <label for="myCourse">課程</label><br>
+              <select name="inputCourse" class="py-2 px-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100 text-light" id="myCourse">
+                <option value="1">1堂50分鐘</option>
+                <option value="2">3堂50分鐘</option>
+                <option value="3">10堂50分鐘</option>
+                <option value="4">20堂50分鐘</option>
+              </select>
+
+            </li>
+            <li class="col-lg-6">
+              <label for="myDate">想預約的日期</label><br>
+              <input type="text" name="inputDate" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myDate" placeholder="請選擇日期">
+            </li>
+            <li>
+              <label for="myLocation">上課地點</label><br>
+              <input type="text" name="inputName" class="py-2 pl-4 mt-2 mt-lg-1 bg-asphalt border border-light rounded-1 w-100" id="myLocation" placeholder="請輸入上課地點">
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-end">
+            <span class="fz-7 lh-21 font-azeret mb-6 mb-lg-0">NT$1600</span>
+            <a href="./pay-credit.html" class="btn text-light bg-gradient fz-7 d-block rounded-2 border-0 py-2 px-4 px-lg-12">前往結賬</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="bg-acadia">
+      <div class="footer container text-chino py-6 lh-19">
+  Coding Home © 2022 All Rights Reserved
+</div>
+    </footer>
+
+    <div class="modal fade" id="myLogin" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-aztec text-center">
+          <div class="d-flex justify-content-center position-relative p-6 pb-8">
+            <h5 class="modal-title fz-4">登入</h5>
+            <button type="button" class="btn-close btn-close-white close position-absolute" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body mx-auto">
+            <form class="form text-start mb-12">
+              <label for="myMail">信箱</label><br>
+              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myMail" name="myMail" type="email" placeholder="請輸入信箱"><br>
+
+              <label for="myPwd">密碼</label><br>
+              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myPwd" name="myPwd" type="password" placeholder="請輸入密碼"><br>
+
+              <button type="submit" class="bg-gradient w-100 py-2 text-light rounded-2 border-0 fz-7">登入</button>
+            </form>
+
+            <div class="position-relative pb-4">
+              <hr class="text-silver">
+              <div class="px-4 bg-aztec text-silver position-absolute top-0 left-50 translate-middle word-nowrap">其他登入方式</div>
+            </div>
+
+            <a role="button" href="#" class="btn btn-outline-light mb-6 py-2 px-8 w-100 rounded-1 position-relative"><img src="./assets/images/icon_fb.svg" class="icon-size-24 position-absolute social-icon" alt="fb-icon">Facebook 登入</a>
+
+            <a role="button" href="#" class="btn btn-outline-light mb-12 py-2 px-8 w-100 rounded-1 position-relative"><img src="./assets/images/icon_google.svg" class="icon-size-24 position-absolute social-icon" alt="fb-icon">Google 登入</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 輪播swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+
+    <!-- 日曆 -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+
+    <!-- 動畫特效 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
