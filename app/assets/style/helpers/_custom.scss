@@ -70,7 +70,23 @@ $custom-spacers: (
   17: $spacer * 4.25,
   18: $spacer * 4.5,
   19: $spacer * 4.75,
-  20: $spacer * 5
+  20: $spacer * 5,
+  21: $spacer * 5.25,
+  22: $spacer * 5.5,
+  23: $spacer * 5.75,
+  24: $spacer * 6,
+  25: $spacer * 6.25,
+  26: $spacer * 6.5,
+  27: $spacer * 6.75,
+  28: $spacer * 7,
+  29: $spacer * 7.25,
+  30: $spacer * 7.5,
+  31: $spacer * 7.75,
+  32: $spacer * 8,
+  33: $spacer * 8.25,
+  34: $spacer * 8.5,
+  35: $spacer * 8.75,
+  36: $spacer * 9,
 ) !default;
 
 $spacers: map-merge($spacers , $custom-spacers);

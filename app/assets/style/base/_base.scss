@@ -15,7 +15,12 @@ a {
   text-decoration: none;
   transition: all .3s;
   &:hover {
+    border-color: $primary;
     transform: scale(1.03);
+  }
+  &.active {
+    border-color: $primary;
+    color: $primary;
   }
 }
 // button:hover {

@@ -1,0 +1,102 @@
+
+.step-11 {
+  &:hover {
+    color: $light;
+  }
+  &::after {
+    content: "課程報名";
+    width: 64px;
+    position: absolute;
+    top: 24px;
+    left: 6px;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    color: $primary;
+  }
+}
+.step-12 {
+  &:hover {
+    color: $light;
+    background-color: $aztec;
+    border-color: $silver;
+  }
+  &::after {
+    content: "信用卡付款";
+    width: 80px;
+    position: absolute;
+    top: 24px;
+    left: 6px;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    color: $silver;
+  }
+}
+.step-13 {
+  &:hover {
+    color: $light;
+    background-color: $aztec;
+    border-color: $silver;
+  }
+  &::after {
+    content: "付款成功";
+    width: 64px;
+      position: absolute;
+      top: 24px;
+      left: 6px;
+      transform: translateX(-50%);
+      margin-top: 8px;
+      color: $silver;
+  }
+}
+.step-22{
+  &:hover {
+    color: $light;
+  }
+  &::after {
+    content: "信用卡付款";
+    width: 80px;
+    position: absolute;
+    top: 24px;
+    left: 6px;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    color: $primary;
+  }
+}
+.step-33 {
+  &:hover {
+    color: $light;
+  }
+  &::after {
+    content: "付款成功";
+    width: 64px;
+      position: absolute;
+      top: 24px;
+      left: 6px;
+      transform: translateX(-50%);
+      margin-top: 8px;
+      color: $primary;
+  }
+}
+
+.register-card::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 0 12px;
+  border-color: #2D2D2D transparent transparent transparent;
+  @include pc {
+    left: 100%;
+    top: 50%;
+    border-width: 12px 0 12px 12px;
+    border-color: transparent transparent transparent #2D2D2D;
+  }
+}
+
+.pb-276-px {
+  padding-bottom: 276px;
+}

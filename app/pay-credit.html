@@ -1,0 +1,60 @@
+---
+title: 課程報名(信用卡付款)
+layout: ./app/layout.ejs
+engine: ejs
+current: pay-credit
+---
+
+<div class="bg-asphalt">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <div class="position-relative mt-6 mb-13 mb-lg-11 mb-lg-16">
+          <div class="progress" style="height: 2px;">
+            <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
+          </div>
+
+          <span class="step-11 position-absolute top-0 left-0 translate-middle btn btn-sm btn-primary rounded-pill icon-size-20 text-light border border-silver text-center align-middle"><span class="material-icons fz-10 lh-20 p-1 position-absolute top-50 left-50 translate-middle">check</span></span>
+          <span class="step-22 position-absolute top-0 left-50 translate-middle btn btn-sm btn-primary rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">2</span>
+          <span class="step-13 position-absolute top-0 left-100 translate-middle btn btn-sm btn-aztec rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">3</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-dark pt-0 pt-lg-12 pb-10 pb-lg-20">
+  <div class="container">
+    <div class="row">
+      <div class="animate__animated animate__fadeInRightBig col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+        <div class="p-6 py-lg-12 px-lg-8 bg-asphalt text-start">
+          <h2 class="fz-4 text-center mb-6 mb-lg-12">信用卡付款</h2>
+          <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-6">請輸入信用卡資訊進行付款</h3>
+
+          <ul class="row text-silver text-start mb-4 mb-lg-6">
+            <li>
+              <label for="myCreditAcc">信用卡帳號</label><br>
+              <input type="text" name="inputCreditAcc" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myCreditAcc" placeholder="Xxxx-xxxx-xxxx-xxxx">
+            </li>
+            <li>
+              <label for="mySecureNo">安全碼</label><br>
+              <input type="password" name="inputSecureNo" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="mySecureNo" placeholder="***">
+            </li>
+            <li>
+              <label for="myValidDate">有效日期</label><br>
+              <input type="email" name="inputValidDate" class="py-2 pl-4 mt-2 mt-lg-1 bg-asphalt border border-light rounded-1 w-100" id="myValidDate" placeholder="(MM-YY)">
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-end">
+            <span class="fz-7 lh-21 font-azeret mb-6 mb-lg-0">NT$1600</span>
+            <a href="./pay-complete.html" class="btn text-light bg-gradient fz-7 d-block rounded-2 border-0 py-2 px-auto px-lg-12">下一步</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

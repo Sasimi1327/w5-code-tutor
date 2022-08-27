@@ -113,6 +113,29 @@ $utilities: map-merge(
     ),
   )
 );
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          (
+            1: 4px,
+            2: 8px,
+            3: 12px,
+            4: 16px,
+            5: 20px,
+            6: 24px
+          )
+        ),
+      ),
+    ),
+  )
+);
+
 $utilities: map-merge(
   $utilities, (
     "line-height": map-merge(
@@ -147,14 +170,15 @@ $utilities: map-merge(
   )
 );
 
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
 // 特殊line-height
+.lh-10 {
+  line-height: 10px;
+}
 .lh-19 {
   line-height: 19px;
+}
+.lh-20 {
+  line-height: 20px;
 }
 .lh-21 {
   line-height: 21px;

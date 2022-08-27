@@ -1,0 +1,102 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+current: pay-register
+---
+
+<div class="bg-asphalt">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <div class="position-relative mt-6 mb-13 mb-lg-11 mb-lg-12">
+          <div class="progress" style="height: 2px;">
+            <div class="progress-bar" role="progressbar" style="width: 0%;"></div>
+          </div>
+
+          <span class="step-11 position-absolute top-0 left-0 translate-middle btn btn-sm btn-primary rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">1</span>
+          <span class="step-12 position-absolute top-0 left-50 translate-middle btn btn-sm btn-aztec rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">2</span>
+          <span class="step-13 position-absolute top-0 left-100 translate-middle btn btn-sm btn-aztec rounded-pill icon-size-20 text-light border border-silver fz-10 lh-10 px-1 font-azeret">3</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-dark pt-0 pt-lg-12 pb-10 pb-lg-36">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="animate__animated animate__backInLeft col-lg-4 mb-11 mb-lg-0" style="z-index:1;">
+        <div class="register-card card p-6 py-lg-12 px-lg-8 text-center mr-lg-n5">
+          <img src="./assets/images/teacher01.jpg" alt="avatar" class="rounded-circle mb-4 mb-lg-6 mx-auto icon-size-100">
+          <h3 class="fz-8 fz-lg-7 lh-base mb-2 mb-lg-1">基礎前端 - HTML</h3>
+          <h4 class="text-primary fz-8 lh-base mb-2">前端語言</h4>
+          <p class="fz-8">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+        </div>
+      </div>
+
+      <div class="animate__animated animate__backInRight col-lg-8">
+        <div class="p-6 py-lg-12 pr-lg-8 pl-lg-29 ml-lg-n5 bg-asphalt">
+          <h2 class="fz-4 mb-6 mb-lg-12">課程報名</h2>
+
+          <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-2">選擇付款方式</h3>
+          <ul class="row align-items-center row-cols-2 row-cols-lg-4 mx-0 mb-8">
+            <li class="col-6 col-lg-3 pr-1 pr-lg-2 mb-2 mb-lg-0">
+              <a class="active p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">信用卡付款</a>
+            </li>
+            <li class="col-6 col-lg-3 pl-1 px-lg-2 mb-2 mb-lg-0">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">超商繳款</a>
+            </li>
+            <li class="col-6 col-lg-3 pr-1 px-lg-2">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">ATM轉帳</a>
+            </li>
+            <li class="col-6 col-lg-3 pl-1 pl-lg-2">
+              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">12期分期付款</a>
+            </li>
+          </ul>
+
+          <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-6">訂單資訊</h3>
+
+          <ul class="row text-silver text-start mb-6">
+            <li class="col-lg-6">
+              <label for="myName">姓名</label><br>
+              <input type="text" name="inputName" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myName" placeholder="請輸入姓名">
+            </li>
+            <li class="col-lg-6">
+              <label for="myTel">電話</label><br>
+              <input type="tel" name="inputTel" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myTel" placeholder="請輸入電話號碼">
+            </li>
+            <li>
+              <label for="myEmail">Email</label><br>
+              <input type="email" name="inputEmail" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myEmail" placeholder="請輸入Email">
+            </li>
+            <li class="col-lg-6">
+              <label for="myCourse">課程</label><br>
+              <select name="inputCourse" class="py-2 px-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100 text-light" id="myCourse">
+                <option value="1">1堂50分鐘</option>
+                <option value="2">3堂50分鐘</option>
+                <option value="3">10堂50分鐘</option>
+                <option value="4">20堂50分鐘</option>
+              </select>
+
+            </li>
+            <li class="col-lg-6">
+              <label for="myDate">想預約的日期</label><br>
+              <input type="text" name="inputDate" class="py-2 pl-4 mt-2 mt-lg-1 mb-4 mb-lg-6 bg-asphalt border border-light rounded-1 w-100" id="myDate" placeholder="請選擇日期">
+            </li>
+            <li>
+              <label for="myLocation">上課地點</label><br>
+              <input type="text" name="inputName" class="py-2 pl-4 mt-2 mt-lg-1 bg-asphalt border border-light rounded-1 w-100" id="myLocation" placeholder="請輸入上課地點">
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-end">
+            <span class="fz-7 lh-21 font-azeret mb-6 mb-lg-0">NT$1600</span>
+            <a href="./pay-credit.html" class="btn text-light bg-gradient fz-7 d-block rounded-2 border-0 py-2 px-4 px-lg-12">前往結賬</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

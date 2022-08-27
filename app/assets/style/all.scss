@@ -31,6 +31,7 @@
 @import "../../../node_modules/bootstrap/scss/close";
 @import "../../../node_modules/bootstrap/scss/popover";
 @import "../../../node_modules/bootstrap/scss/helpers";
+@import "../../../node_modules/bootstrap/scss/progress";
 
 // utilites
 @import "../../../node_modules/bootstrap/scss/utilities";
@@ -43,7 +44,8 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import './layout/header.scss';
+@import './layout/header';
 @import './pages/index';
 @import './pages/course';
 @import './pages/course-detail';
+@import './pages/pay';

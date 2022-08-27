@@ -61,9 +61,9 @@ function checkMenuClose(pMatchMedia) {
   }
 }
 
-// const elem = document.querySelector('input[name="inputDate"]');
-// const datepicker = new Datepicker(elem, {
-//   // ...options
-//   language: 'zh-TW',
-//   buttonClass: 'btn',
-// });
+const elem = document.querySelector('input[name="inputDate"]');
+const datepicker = new Datepicker(elem, {
+  autohide: true,
+  language: "zh-TW",
+  buttonClass: "btn",
+});
