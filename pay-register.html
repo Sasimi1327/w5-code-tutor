@@ -49,7 +49,7 @@
     </div>
 
     <div class="dropdown">
-      <a class="burgar_btn d-block d-md-none" role="button" href="#collapseMenu" data-bs-toggle="collapse"><i class="fas fa-bars"></i></a>
+      <a class="burgar_btn d-block d-md-none" role="button" href="#collapseMenu" data-bs-toggle="collapse"><span class="material-icons">drag_handle</span></a>
     </div>
   </div>
 </nav>
@@ -101,18 +101,27 @@
           <h2 class="fz-4 mb-6 mb-lg-12">課程報名</h2>
 
           <h3 class="fz-7 text-center text-lg-start mb-4 mb-lg-2">選擇付款方式</h3>
+
           <ul class="row align-items-center row-cols-2 row-cols-lg-4 mx-0 mb-8">
-            <li class="col-6 col-lg-3 pr-1 pr-lg-2 mb-2 mb-lg-0">
-              <a class="active p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">信用卡付款</a>
+            <li class="col-6 col-lg-auto pr-1 pr-lg-2 mb-2 mb-lg-0">
+              <!-- <a class="active p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">信用卡付款</a> -->
+              <label class="payStyle checked btn btn-outline-light p-4 px-lg-auto w-100 fz-8 rounded-2" for="btnradio1">信用卡付款</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
             </li>
-            <li class="col-6 col-lg-3 pl-1 px-lg-2 mb-2 mb-lg-0">
-              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">超商繳款</a>
+            <li class="col-6 col-lg-auto pl-1 px-lg-2 mb-2 mb-lg-0">
+              <!-- <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">超商繳款</a> -->
+              <label class="payStyle btn btn-outline-light p-4 px-lg-auto w-100 fz-8 rounded-2" for="btnradio2">超商繳款</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
             </li>
-            <li class="col-6 col-lg-3 pr-1 px-lg-2">
-              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">ATM轉帳</a>
+            <li class="col-6 col-lg-auto pr-1 px-lg-2">
+              <!-- <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">ATM轉帳</a> -->
+              <label class="payStyle btn btn-outline-light p-4 px-lg-auto w-100 fz-8 rounded-2" for="btnradio3">ATM轉帳</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
             </li>
-            <li class="col-6 col-lg-3 pl-1 pl-lg-2">
-              <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">12期分期付款</a>
+            <li class="col-6 col-lg-auto pl-1 pl-lg-2">
+              <!-- <a class="p-4 px-lg-auto fz-8 border border-light rounded-2 text-light">12期分期付款</a> -->
+              <label class="payStyle btn btn-outline-light p-4 px-lg-auto w-100 fz-8 rounded-2" for="btnradio4">12期分期付款</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
             </li>
           </ul>
 

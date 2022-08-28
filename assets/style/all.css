@@ -23268,4 +23268,16 @@ input {
   padding-bottom: 276px;
 }
 
+.payStyle:hover {
+  border-color: #62DB54;
+  color: #62DB54;
+  background-color: transparent;
+}
+
+.payStyle.checked {
+  border-color: #62DB54;
+  color: #62DB54;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=all.css.map */
