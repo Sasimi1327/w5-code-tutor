@@ -331,24 +331,34 @@
   }
 
   //paginations
+  //蓋掉原先預設的樣式
   &-button-next:after, &-button-prev:after {
     content: '';
   }
 
+  //針對箭頭做樣式設定
   &-button-next, &-button-prev {
-    position: unset;
     width: 24px;
     height: 24px;
+    
+    //蓋掉原本的樣式設定
+    position: unset;
     margin-top: 0;
     color: $primary;
+    //----------------
   }
   
   .swiper-pagination {
+    //蓋掉原本的樣式設定
     position: unset;
     width: auto;
+    //----------------
+
+    //單一樣式
     .swiper-pagination-bullet {
       background-color: $primary;
       opacity: initial;
+      //點選後的樣式
       &-active {
         width: 16px;
         border-radius: 100px;
@@ -361,9 +371,10 @@
     transform: translateX(-50%);
     bottom: 0;
     left: 50%;
+    //需要提升才能夠點的到按鈕
     z-index: 10;
     @include pc {
-      left: 30%;
+      left: 25%;
       transform: none;
     }
   }
