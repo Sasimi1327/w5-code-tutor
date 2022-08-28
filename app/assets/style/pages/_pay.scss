@@ -100,3 +100,14 @@
 .pb-276-px {
   padding-bottom: 276px;
 }
+
+.payStyle:hover {
+  border-color: $primary;
+  color: $primary;
+  background-color: transparent;
+}
+.payStyle.checked {
+  border-color: $primary;
+  color: $primary;
+  background-color: transparent;
+}

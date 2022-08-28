@@ -67,3 +67,10 @@ const datepicker = new Datepicker(elem, {
   language: "zh-TW",
   buttonClass: "btn",
 });
+
+$(document).ready(function () {
+  $(".payStyle").click(function () {
+    $(".payStyle").not(this).removeClass("checked");
+    $(this).toggleClass("checked");
+  });
+});
