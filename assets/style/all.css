@@ -23016,9 +23016,9 @@ input {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  position: unset;
   width: 24px;
   height: 24px;
+  position: unset;
   margin-top: 0;
   color: #62DB54;
 }
@@ -23050,7 +23050,7 @@ input {
 
 @media (min-width: 992px) {
   .swiper-buttons {
-    left: 30%;
+    left: 25%;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
