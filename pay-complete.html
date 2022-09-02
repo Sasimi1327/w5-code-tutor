@@ -28,10 +28,11 @@
   <body>
     <header class="bg-aztec sticky-top">
       <nav class="header container d-flex justify-content-between align-items-center">
-  <div class="logo">
+  <!-- 會建議把 logo 放 <h1> 標籤，因為一個網站只能有也必須要有一個 <h1> ，而課程介紹便沒有適合放置 <h1> 的地方，所以建議在 logo 的地方放 <h1> 。 -->
+  <h1 class="logo">
     <a href="./" class="hvr-bounce-in py-md-6"><img src="./assets/images/logo.svg"  alt="logo pc" class="logo img-pc d-none d-md-inline-block"></a>
     <a href="./" class="hvr-bounce-in py-6 py-md-0"><img src="./assets/images/logo2.svg" alt="logo mobile" class="logo img-mobile d-md-none"></a>
-  </div>
+  </h1>
 
   <div>
     <div class="navbar py-0 d-none d-md-block">
@@ -113,11 +114,11 @@
           </div>
           <div class="modal-body mx-auto">
             <form class="form text-start mb-12">
-              <label for="myMail">信箱</label><br>
-              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myMail" name="myMail" type="email" placeholder="請輸入信箱"><br>
+              <label for="myMail" class="form-label">信箱</label><br>
+              <input class="form-control mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myMail" name="myMail" type="email" placeholder="請輸入信箱"><br>
 
-              <label for="myPwd">密碼</label><br>
-              <input class="mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myPwd" name="myPwd" type="password" placeholder="請輸入密碼"><br>
+              <label for="myPwd"  class="form-label">密碼</label><br>
+              <input class="form-control mt-2 mb-6 fz-8 py-2 px-4 bg-transparent border border-light rounded-1 w-100" id="myPwd" name="myPwd" type="password" placeholder="請輸入密碼"><br>
 
               <button type="submit" class="bg-gradient w-100 py-2 text-light rounded-2 border-0 fz-7">登入</button>
             </form>

@@ -22579,8 +22579,14 @@ input {
 .stickyHeader {
   position: -webkit-sticky;
   position: sticky;
-  top: 75px;
+  top: 80px;
   z-index: 1020;
+}
+
+button[type='submit']:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .banner {
