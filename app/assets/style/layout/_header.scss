@@ -71,9 +71,13 @@ input {
   left: 32px;
   transform: translateY(-50%);
 }
-
+// 在 <nav> 下拉是選單開啟時，上方有一條小白線，是因為多了 0.6px 左右的 top 高度。
 .stickyHeader {
   position: sticky;
-  top: 75px;
+  top: 80px;
   z-index: 1020;
+}
+// 登入頁的登入沒有做到 hover 的效果。
+button[type='submit']:hover {
+  transform: scale(1.05);
 }
